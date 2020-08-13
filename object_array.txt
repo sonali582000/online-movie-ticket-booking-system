@@ -1,0 +1,38 @@
+class Movies
+{
+public static void main(String args[])
+{
+Movie mv1[] = new Movie[3] ;
+mv1[0] = new Movie();
+mv1[0].Moviedetails(1,"Sholay");
+mv1[0].showdetails();
+mv1[1] = new Movie();
+mv1[1].Moviedetails(2,"3 Idiots");
+mv1[1].showdetails();
+mv1[1] = new Movie();
+mv1[1].Moviedetails(3,"Chhichhore");
+mv1[1].showdetails();
+}
+}
+
+class Movie{
+int id;
+String movie_name;
+public void Moviedetails(int id,String movie_name)
+{
+this.id=id;
+this.movie_name=movie_name;
+}
+public void showdetails()
+{
+System.out.println("Id = "+id+" | "+"Movie name = "+movie_name);
+}
+}
+
+
+
+o/p
+
+Id = 1 | Movie name = Sholay
+Id = 2 | Movie name = 3 Idiots
+Id = 3 | Movie name = Chhichhore
