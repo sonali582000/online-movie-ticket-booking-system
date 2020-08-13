@@ -1,0 +1,82 @@
+Entities:-
+
+@User Table:-
+				
+    int userId; 
+    String first_name; 
+    String middle_name; 
+    String last_name; 
+    String address;  
+    String dob; 
+    String phone_no; 
+    String city; 
+    String state; 
+    String country;
+    String email_Id; 
+    String gender; 
+    String user_name;
+    String password;
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@Multiplex Table :-
+  
+    String multiplex_Name; 
+    String city; 
+    int pinCode; 
+    String state; 
+    String streetNo; 
+    String address; 
+ 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@Admin Table :-
+
+    int Id; 
+    String full_name; 
+    String phone_no; 
+    String email_Id; 
+    String gender; 
+    String user_name;
+    String password;
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@Movie Table :-
+
+    int movieId; 
+    int multiplex_Id;   
+    String movie_name;
+    String movie_details;
+    String movie_type // Hindi,English
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@Booking Table:-
+
+    int bookingId;
+    int amount; 
+    String time_slot;
+    int booked_date;  
+    int payment_status
+
+     
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@Transaction Table :-
+
+   int transaction_id;
+   float price;
+   int pay_id;
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@Role Table :-
+
+   int Role_Id;
+   String Role_name;
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
